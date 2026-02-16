@@ -21,4 +21,4 @@ jobs:
 
     # OSA 3: Etsii, löytyykö tiedostoista "TODO"
     - name: Aja oma TODO-skanneri
-      run: tarkistakoodi.py
+      run: python tarkistakoodi.py
