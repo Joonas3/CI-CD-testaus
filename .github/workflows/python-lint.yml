@@ -18,3 +18,7 @@ jobs:
     # OSA 2: Etsii tyylivirheet (esim. liian pitkät rivit)
     - name: Aja Linteri (Tyylivirheet)
       run: flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
+
+    # OSA 3: Etsii, löytyykö tiedostoista "TODO"
+    - name: Aja oma TODO-skanneri
+      run: tarkistakoodi.py
