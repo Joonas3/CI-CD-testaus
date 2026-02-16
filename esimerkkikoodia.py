@@ -1,3 +1,2 @@
-erittäin_pitkä_muuttujan_nimi_joka_vain_jatkuu_ja_jatkuu_ja_ylittää_kaikki_suositellut_rivinpituudet_helposti = "testi"
-
-print(erittäin_pitkä_muuttujan_nimi_joka_vain_jatkuu_ja_jatkuu_ja_ylittää_kaikki_suositellut_rivinpituudet_helposti)
+# ei enää liian pitkää riviä
+# tai printtiä tuotantokoodissa
