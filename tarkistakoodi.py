@@ -2,13 +2,14 @@ import sys
 
 # Luetaan tiedosto rivi riviltä
 try:
-    with open('jotaintekstia.txt', 'r', encoding='utf-8') as file:
+    with open('esimerkkikoodia.py', 'r', encoding='utf-8') as file:
         for i, line in enumerate(file):
-            if "TODO" in line:
-                print(f"VIRHE rivillä {i+1}: TODO löydetty!")
+            if ("print" in line) or (len(line) > 80):
+                print(f"VIRHE rivillä {i+1}: print löydetty tai rivi on yli 80 merkkiä!")
                 sys.exit(1)  # Punainen valo CI-putkessa
 
     print("Koodi puhdas.")
     sys.exit(0)  # Vihreä valo
 except FileNotFoundError:
-    print("Tiedostoa jotaintekstiä.txt ei löytynyt.")
+    print("Tiedostoa esimerkkikoodia.py ei löytynyt.")
+    sys.exit(1)
