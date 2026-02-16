@@ -1,2 +1,2 @@
 # ei enää liian pitkää riviä
-# tai printtiä tuotantokoodissa
+# tai tulostusta tuotantokoodissa
